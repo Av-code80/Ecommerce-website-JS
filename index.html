@@ -6,16 +6,14 @@
     <script src="https://kit.fontawesome.com/e8f3f5163c.js" crossorigin="anonymous">
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <title>Compfy House</title>
     <!-- font awsom  -->
 
-
     <!-- custom css  -->
-    <link rel="stylesheet" href="styles.css" type="text/css" />
 </head>
 
 <body>
-
     <!-- navbar -->
     <nav class="navbar">
         <div class="navbar-center">
@@ -51,7 +49,7 @@
             <!-- End of Section  -->
 
             <!-- Single product -->
-            <article class="product">
+            <!-- <article class="product">
                 <div class="img-container">
                     <img src="./images/product-1.jpeg" alt="product" class="product-img">
                     <button class="bag-btn" data-id="1">
@@ -61,7 +59,7 @@
                 </div>
                 <h3>queen bed</h3>
                 <h4>$16</h4>
-            </article>
+            </article> -->
 
             <!-- Single product -->
             <article class="product">
@@ -150,12 +148,46 @@
                 <h3>queen bed</h3>
                 <h4>$16</h4>
             </article>
-
     </section>
-
     <!-- End of Single product -->
 
-    <script src="styles.css"></script>
+    <!-- Cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            </span>
+            <h2>Your cart</h2>
+            <div class="cart-content">
+                <!-- cart item  -->
+                <!-- <div class="cart-item">        CUT AND Move it to App.js
+                    <img src="./images/product-1.jpeg" 
+                    alt="product">
+                   <div>
+                       <h4>queen bed</h4>
+                       <h5>$9</h5>
+                    <span class="remove-item">remove</span>
+                   </div>
+                   <div>
+                       <i class="fas fa-chevron-up"></i>
+                       <p class="item-amount">1</p>
+                       <i class="fas fa-chevron-down"></i>
+                   </div>
+                </div> -->
+                <!-- end of cart item  -->
+            </div>
+                <div class="cart-footer">
+                    <h3>Your Total : $ <span class="cart-total"></span>0</h3>
+                    <button class="clear-cart banner-btn">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Cart -->
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
