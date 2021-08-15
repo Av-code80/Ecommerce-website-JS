@@ -8,11 +8,13 @@
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
