@@ -34,7 +34,7 @@ class Products {
   }
 }
 
-// display products
+// display products in JS
 class UI {
   displayProducts(products) {
     let result = "";
