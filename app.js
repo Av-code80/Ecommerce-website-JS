@@ -18,7 +18,7 @@ let buttonsDOM = [];
 class Products {
   async getProducts() {
     try {
-      let result = await fetch('products.json');
+      let result = await fetch("products.json");
       let data = await result.json();  //get data from json
       let products = data.items;
       products = products.map((item) => {
@@ -59,12 +59,12 @@ class UI {
   }
 
   getBagButtons() {
-    const buttons = [...document.querySelectorAll("bag-btn")]; //??
+    const buttons = [...document.querySelectorAll(".bag-btn")]; //to exit it from node
     buttonsDOM = buttons;
 
-    buttons.forEach((button) => {
+    buttons.forEach(button => { //getting id of each button
       let id = button.dataset.id; 
-      let inCart = cart.find((item) => item.id === id);
+      let inCart = cart.find((item) => item.id === id); //when page load, cart can get info
 
       if (inCart) { // if exist in cart
         button.innerText = "In Cart";
@@ -74,7 +74,7 @@ class UI {
         button.addEventListener("click", (event) => {
           event.target.innerText = "In Cart";
           event.target.disabled = true;
-          // get product from products => in storage method
+          // get product from products => in Storage method
           let cartItem = { ...Storage.getProduct(id), amount: 1 }; //then add items to cart
           console.log(cartItem);
           // add product to the cart
