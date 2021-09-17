@@ -13,7 +13,7 @@ const productsDOM = document.querySelector(".products-center");
 let cart = [];
 // buttons
 let buttonsDOM = [];
-
+//===
 // getting the product
 class Products {
   async getProducts() {
